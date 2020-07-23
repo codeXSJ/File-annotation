@@ -7,6 +7,7 @@
 //
 
 #import "StartViewController.h"
+#import "CalloutViewController.h"
 
 @interface StartViewController ()
 
@@ -29,7 +30,11 @@
 }
 
 - (void)btnAction {
-    
+    NSString *docPath = [[NSBundle mainBundle] pathForResource:@"IMG" ofType:@"pdf"];
+    CalloutViewController * call = [[CalloutViewController alloc]init];
+    call.fileUrl = [NSURL fileURLWithPath:docPath];
+    call.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:call animated:YES];
 }
 /*
 #pragma mark - Navigation
