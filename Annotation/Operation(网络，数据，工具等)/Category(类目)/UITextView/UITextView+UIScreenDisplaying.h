@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITextView (UIScreenDisplaying)
 - (BOOL)isDisplayedInScreen;
+- (BOOL)isShowingOnKeyWindow;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -33,10 +33,7 @@
 		05DAE51624C9BDD400A81683 /* UITextView+UIScreenDisplaying.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE4F324C9BDD400A81683 /* UITextView+UIScreenDisplaying.m */; };
 		05DAE51724C9BDD400A81683 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE4F824C9BDD400A81683 /* MBProgressHUD+MJ.m */; };
 		05DAE51824C9BDD400A81683 /* MBProgressHUD+ShowInWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE4F924C9BDD400A81683 /* MBProgressHUD+ShowInWindow.m */; };
-		05DAE51924C9BDD400A81683 /* JXTAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE4FE24C9BDD400A81683 /* JXTAlertController.m */; };
 		05DAE51A24C9BDD400A81683 /* Methods.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE4FF24C9BDD400A81683 /* Methods.m */; };
-		05DAE51C24C9BDD400A81683 /* JDCMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE50424C9BDD400A81683 /* JDCMessageView.m */; };
-		05DAE51D24C9BDD400A81683 /* JXTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE50824C9BDD400A81683 /* JXTAlertView.m */; };
 		05DAE52524C9BFF400A81683 /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE52124C9BFF400A81683 /* BasicViewController.m */; };
 		05DAE52624C9BFF400A81683 /* BasicNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE52224C9BFF400A81683 /* BasicNavController.m */; };
 		05DAE52924C9C19500A81683 /* CarriedOutViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DAE52824C9C19500A81683 /* CarriedOutViewCell.m */; };
@@ -115,13 +112,7 @@
 		05DAE4F724C9BDD400A81683 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		05DAE4F824C9BDD400A81683 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		05DAE4F924C9BDD400A81683 /* MBProgressHUD+ShowInWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowInWindow.m"; sourceTree = "<group>"; };
-		05DAE4FD24C9BDD400A81683 /* JXTAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertController.h; sourceTree = "<group>"; };
-		05DAE4FE24C9BDD400A81683 /* JXTAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertController.m; sourceTree = "<group>"; };
 		05DAE4FF24C9BDD400A81683 /* Methods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Methods.m; sourceTree = "<group>"; };
-		05DAE50424C9BDD400A81683 /* JDCMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCMessageView.m; sourceTree = "<group>"; };
-		05DAE50524C9BDD400A81683 /* JDCMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCMessageView.h; sourceTree = "<group>"; };
-		05DAE50724C9BDD400A81683 /* JXTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXTAlertView.h; sourceTree = "<group>"; };
-		05DAE50824C9BDD400A81683 /* JXTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXTAlertView.m; sourceTree = "<group>"; };
 		05DAE50E24C9BDD400A81683 /* Methods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Methods.h; sourceTree = "<group>"; };
 		05DAE52124C9BFF400A81683 /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		05DAE52224C9BFF400A81683 /* BasicNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicNavController.m; sourceTree = "<group>"; };
@@ -409,38 +400,8 @@
 			children = (
 				05DAE50E24C9BDD400A81683 /* Methods.h */,
 				05DAE4FF24C9BDD400A81683 /* Methods.m */,
-				05DAE4FC24C9BDD400A81683 /* AlertController */,
-				05DAE50324C9BDD400A81683 /* Message */,
-				05DAE50624C9BDD400A81683 /* AlertView */,
 			);
 			path = "Tools(工具类)";
-			sourceTree = "<group>";
-		};
-		05DAE4FC24C9BDD400A81683 /* AlertController */ = {
-			isa = PBXGroup;
-			children = (
-				05DAE4FD24C9BDD400A81683 /* JXTAlertController.h */,
-				05DAE4FE24C9BDD400A81683 /* JXTAlertController.m */,
-			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		05DAE50324C9BDD400A81683 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				05DAE50424C9BDD400A81683 /* JDCMessageView.m */,
-				05DAE50524C9BDD400A81683 /* JDCMessageView.h */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		05DAE50624C9BDD400A81683 /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-				05DAE50724C9BDD400A81683 /* JXTAlertView.h */,
-				05DAE50824C9BDD400A81683 /* JXTAlertView.m */,
-			);
-			path = AlertView;
 			sourceTree = "<group>";
 		};
 		05DAE50F24C9BDD400A81683 /* Net(网络层的代码) */ = {
@@ -635,12 +596,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DAE51924C9BDD400A81683 /* JXTAlertController.m in Sources */,
 				05DAE51124C9BDD400A81683 /* UILabel+Util.m in Sources */,
 				05DAE4DE24C9BD7700A81683 /* CalloutBottomView.m in Sources */,
 				05DAE4DD24C9BD7700A81683 /* BackgroundColorView.m in Sources */,
 				05DAE51024C9BDD400A81683 /* UIImage+Util.m in Sources */,
-				05DAE51D24C9BDD400A81683 /* JXTAlertView.m in Sources */,
 				05DAE48524C9AB8D00A81683 /* ViewController.m in Sources */,
 				05DAE4D624C9BD7700A81683 /* CalloutViewController.m in Sources */,
 				05DAE52924C9C19500A81683 /* CarriedOutViewCell.m in Sources */,
@@ -655,7 +614,6 @@
 				05DAE51A24C9BDD400A81683 /* Methods.m in Sources */,
 				05DAE4D724C9BD7700A81683 /* LTVideoProgressSlider.m in Sources */,
 				05DAE4D824C9BD7700A81683 /* FontSizeView.m in Sources */,
-				05DAE51C24C9BDD400A81683 /* JDCMessageView.m in Sources */,
 				05DAE51724C9BDD400A81683 /* MBProgressHUD+MJ.m in Sources */,
 				05DAE51624C9BDD400A81683 /* UITextView+UIScreenDisplaying.m in Sources */,
 				05DAE4DC24C9BD7700A81683 /* TypefaceView.m in Sources */,

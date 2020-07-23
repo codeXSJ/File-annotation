@@ -340,7 +340,7 @@
     for (int i = 0; i < self.array.count; ++i) {
         NSArray *arr = self.array[i];
         self.textView = (UITextView *)[self.view viewWithTag:CurrentTextTag];
-        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isDisplayedInScreen]) {
+        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isShowingOnKeyWindow]) {
             self.textView.font = [UIFont fontWithName:arr[6] size: fontSize];
             NSArray *arrA = @[self.textView,arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],[NSNumber numberWithInteger:fontSize],arr[8],arr[9]];
             [self.array replaceObjectAtIndex:i withObject:arrA];
@@ -361,7 +361,7 @@
     for (int i = 0; i < self.array.count; ++i) {
         NSArray *arr = self.array[i];
         self.textView = (UITextView *)[self.view viewWithTag:CurrentTextTag];
-        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isDisplayedInScreen]) {
+        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isShowingOnKeyWindow]) {
             self.textView.font = [UIFont fontWithName:colorStr size:[arr[7] integerValue]];
             NSArray *arrA = @[self.textView,arr[1],arr[2],arr[3],arr[4],arr[5],colorStr,arr[7],arr[8],arr[9]];
             [self.array replaceObjectAtIndex:i withObject:arrA];
@@ -382,7 +382,7 @@
     for (int i = 0; i < self.array.count; ++i) {
         NSArray *arr = self.array[i];
         self.textView = (UITextView *)[self.view viewWithTag:CurrentTextTag];
-        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isDisplayedInScreen]) {
+        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isShowingOnKeyWindow]) {
             self.textView.textColor = btn.backgroundColor;
             NSArray *arrA = @[self.textView,arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],btn.backgroundColor,arr[9]];
             [self.array replaceObjectAtIndex:i withObject:arrA];
@@ -403,7 +403,7 @@
     for (int i = 0; i < self.array.count; ++i) {
         NSArray *arr = self.array[i];
         self.textView = (UITextView *)[self.view viewWithTag:CurrentTextTag];
-        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isDisplayedInScreen]) {
+        if ([arr[3] integerValue] == CurrentTextTag - Text_Tag && [self.textView isShowingOnKeyWindow]) {
             self.textView.backgroundColor = btn.backgroundColor;
             NSArray *arrA = @[self.textView,arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8],btn.backgroundColor];
             [self.array replaceObjectAtIndex:i withObject:arrA];
