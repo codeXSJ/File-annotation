@@ -15,7 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage *)getUIImageFromPDFPage:(CGPDFPageRef)pageRef;
 
-+ (UIImage *)pq_WaterImageWithImage:(UIImage *)image waterImage:(UIImage *)waterImage waterImageRect:(CGRect)rect cellHeight:(float)cellHeight;
+/// 添加水印
+/// @param image 当前图片
+/// @param waterImage 水印图片
+/// @param rect 水印图片的rect
+/// @param cellHeight cell的高度
++ (UIImage *)pq_WaterImageWithImage:(UIImage *)image
+                         waterImage:(UIImage *)waterImage
+                     waterImageRect:(CGRect)rect
+                         cellHeight:(float)cellHeight;
 
 @end
 

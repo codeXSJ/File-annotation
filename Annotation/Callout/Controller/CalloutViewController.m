@@ -220,7 +220,7 @@
 }
 
 #pragma mark - CalloutBottomViewDelegate
-
+//添加标注
 - (void)A_CalloutBottomViewBtnClick:(UITextView *)textView delButton:(UIButton *)delButton dragView:(UIView *)dragView countTag:(NSInteger)countTag typeface:(NSString *)typeface fontSize:(NSInteger)fontSize fontColor:(UIColor *)fontColor backColor:(UIColor *)backColor {
     CurrentTextTag = Text_Tag + countTag;
     self.count = 0;
@@ -243,7 +243,7 @@
     self.dragView.frame = CGRectMake(CGRectGetMaxX(self.textView.frame)-view_X, CGRectGetMaxY(self.textView.frame)-self.InitialHeight/self.InitialWidth*view_X, moveViewSize, moveViewSize);
     self.delButton.frame = CGRectMake(CGRectGetMinX(self.textView.frame) - delBtnSize+5, CGRectGetMinY(self.textView.frame) - delBtnSize+5, delBtnSize, delBtnSize);
 }
-
+//移动标注
 - (void)textViewPanGuestre:(UIPanGestureRecognizer *)recognizer {
     CurrentTextTag = recognizer.view.tag;
     for (int i = 0; i < self.array.count; ++i) {
@@ -263,7 +263,7 @@
         }
     }
 }
-
+//删除标注
 - (void)deleteEvents:(UIButton *)button {
     for (int i = 0; i < self.array.count; ++i) {
         NSArray *arr = self.array[i];
@@ -280,7 +280,7 @@
         }
     }
 }
-
+//输入框形状改变
 - (void)viewZoomPanGuestre:(UIPanGestureRecognizer *)recognizer {
     CurrentTextTag = recognizer.view.tag - DragView_Tag + Text_Tag;
     for (int i = 0; i < self.array.count; ++i) {
@@ -334,7 +334,7 @@
    self.calloutBottomView.hidden = NO;
    self.fontSizeView.hidden = YES;
 }
-
+//选择字号
 - (void)FontSizeClick:(NSInteger)fontSize {
     CurrentFontSize = fontSize;
     for (int i = 0; i < self.array.count; ++i) {
@@ -355,7 +355,7 @@
    self.calloutBottomView.hidden = NO;
    self.typefaceView.hidden = YES;
 }
-
+//选择字体
 - (void)TypefaceClick:(NSString *)colorStr {
     CurrentTypeface = colorStr;
     for (int i = 0; i < self.array.count; ++i) {
@@ -376,7 +376,7 @@
    self.calloutBottomView.hidden = NO;
    self.fontColorView.hidden = YES;
 }
-
+//选择文字颜色
 - (void)FontColorClick:(UIButton *)btn {
     CurrentFontColor = btn.backgroundColor;
     for (int i = 0; i < self.array.count; ++i) {
@@ -397,7 +397,7 @@
    self.calloutBottomView.hidden = NO;
    self.backgroundColorView.hidden = YES;
 }
-
+//选择背景颜色
 - (void)BackgroundColorClick:(UIButton *)btn {
     CurrentbackColor = btn.backgroundColor;
     for (int i = 0; i < self.array.count; ++i) {

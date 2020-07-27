@@ -45,7 +45,6 @@ NS_ASSUME_NONNULL_BEGIN
                tableView:(UITableView *)tableView
               recognizer:(UIPanGestureRecognizer *)recognizer;
 
--(UIImage *)imageForView:(UIView *)view;
 
 
 @end

@@ -270,9 +270,9 @@
 			isa = PBXGroup;
 			children = (
 				05DAE4C224C9BD7700A81683 /* FontSizeView.h */,
-				05DAE4C324C9BD7700A81683 /* LTVideoProgressSlider.m */,
 				05DAE4C424C9BD7700A81683 /* FontSizeView.m */,
 				05DAE4C524C9BD7700A81683 /* LTVideoProgressSlider.h */,
+				05DAE4C324C9BD7700A81683 /* LTVideoProgressSlider.m */,
 			);
 			path = FontSize;
 			sourceTree = "<group>";
@@ -289,11 +289,11 @@
 		05DAE4C924C9BD7700A81683 /* Typeface */ = {
 			isa = PBXGroup;
 			children = (
-				05DAE4CA24C9BD7700A81683 /* LCScrollMenuView.m */,
-				05DAE4CB24C9BD7700A81683 /* TypefaceView.h */,
-				05DAE4CC24C9BD7700A81683 /* UIView+LCextra.m */,
 				05DAE4CD24C9BD7700A81683 /* LCScrollMenuView.h */,
+				05DAE4CA24C9BD7700A81683 /* LCScrollMenuView.m */,
 				05DAE4CE24C9BD7700A81683 /* UIView+LCextra.h */,
+				05DAE4CC24C9BD7700A81683 /* UIView+LCextra.m */,
+				05DAE4CB24C9BD7700A81683 /* TypefaceView.h */,
 				05DAE4CF24C9BD7700A81683 /* TypefaceView.m */,
 			);
 			path = Typeface;

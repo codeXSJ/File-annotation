@@ -9,8 +9,7 @@
 #import "Methods.h"
 
 @implementation Methods
-+ (BOOL)isNull:(id)object
-{
++ (BOOL)isNull:(id)object {
    
     if ([object isEqual:[NSNull null]]) {
         return NO;
@@ -58,8 +57,7 @@
 
 
 
-+(UIImage *)getUIImageFromPDFPage: (CGPDFPageRef)pageRef
-{
++(UIImage *)getUIImageFromPDFPage: (CGPDFPageRef)pageRef {
 CGRect pageRect = CGPDFPageGetBoxRect(pageRef, kCGPDFMediaBox);
 
 UIGraphicsBeginImageContext(pageRect.size);
@@ -81,7 +79,10 @@ return tempImage;
 
 
 
-+ (UIImage *)pq_WaterImageWithImage:(UIImage *)image waterImage:(UIImage *)waterImage waterImageRect:(CGRect)rect cellHeight:(float)cellHeight{
++ (UIImage *)pq_WaterImageWithImage:(UIImage *)image
+                         waterImage:(UIImage *)waterImage
+                     waterImageRect:(CGRect)rect
+                         cellHeight:(float)cellHeight{
 
     if([[UIScreen mainScreen] scale] == 2.0){                UIGraphicsBeginImageContextWithOptions(image.size, NO, 2.0);
 
